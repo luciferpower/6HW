@@ -58,7 +58,7 @@ namespace _6HW
                 SqlCommand o_Com = new SqlCommand("Delete from Users where Name = '"+ tb_Name.Text + "' ", o_Conn);
                 o_Com.ExecuteNonQuery();       
                 o_Conn.Close();
-
+                Response.Redirect("6HW.aspx");
             }
             catch (Exception o_Exc)
             {
